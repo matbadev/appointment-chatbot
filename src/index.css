@@ -2,47 +2,11 @@ html {
     height: 100%;
     font-family: sans-serif;
     --card-border-radius: 0.125rem;
-    --material-grey: #eeeeee;
+    --background: #eeeeee;
     --color-accent: #e64a19;
     --toolbar-background: #26a69a;
     --toolbar-background-dark: #004d40;
     --message-box-background: #fff;
-}
-
-.ac-image.ac-selectable {
-    cursor: pointer;
-}
-
-.ac-image.ac-selectable:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.ac-image.ac-selectable:active {
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.ac-media-poster.empty {
-    height: 200px;
-    background-color: #F2F2F2;
-}
-
-.ac-media-playButton {
-    width: 56px;
-    height: 56px;
-    border: 1px solid #EEEEEE;
-    border-radius: 28px;
-    box-shadow: 0 0 10px #EEEEEE;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-    cursor: pointer;
-}
-
-.ac-media-playButton-arrow {
-    color: black;
-}
-
-.ac-media-playButton:hover {
-    background-color: white;
 }
 
 @font-face {
@@ -50,38 +14,6 @@ html {
     src: url("https://appsforoffice.microsoft.com/fabric/fonts/icons/FabricMDL2Icons.woff") format("woff"), url("https://appsforoffice.microsoft.com/fabric/fonts/icons/FabricMDL2Icons.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
-
-a.ac-anchor {
-    text-decoration: none;
-}
-
-a.ac-anchor:link {
-    color: #005A9E;
-}
-
-a.ac-anchor:visited {
-    color: #005A9E;
-}
-
-a.ac-anchor:link:active {
-    color: #004D84;
-}
-
-a.ac-anchor:visited:active {
-    color: #004D84;
-}
-
-.ac-container.ac-selectable, .ac-columnSet.ac-selectable {
-    padding: 0;
-}
-
-.ac-container.ac-selectable:hover, .ac-columnSet.ac-selectable:hover {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-.ac-container.ac-selectable:active, .ac-columnSet.ac-selectable:active {
-    background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 .ac-pushButton {
@@ -191,7 +123,7 @@ input {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--material-grey);
+    background-color: var(--background);
 }
 
 #chat-window > header {
@@ -246,7 +178,7 @@ input {
     margin: 0.75rem 0;
     max-width: 40rem;
     background-color: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 
 .chat-message i {
