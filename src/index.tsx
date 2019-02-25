@@ -1,12 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as React from "react"
+import * as ReactDOM from "react-dom"
+import {JsxChatWindow} from "./ui/jsx/JsxChatWindow"
+import {AdaptiveChatWindow} from "./ui/adaptive/AdaptiveChatWindow";
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+import "./index.css"
+import {Config, MessagesConfig} from "./Config";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const config = new Config()
+
+const chatWindow: JSX.Element = config.messages === MessagesConfig.TEXTUAL
+    ? (<JsxChatWindow config={config}/>)
+    : (<AdaptiveChatWindow config={config}/>)
+
+ReactDOM.render(
+    chatWindow,
+    document.getElementById("root") as HTMLElement
+)
