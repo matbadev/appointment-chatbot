@@ -3,7 +3,7 @@ import {LocalDate, LocalDateTime, LocalTime} from "js-joda";
 
 export class AppointmentRepository {
 
-    public appointments: { [appointmentId: number]: AppointmentBuilder } = this.buildDummyAppointments()
+    public appointments: { [appointmentId: number]: AppointmentBuilder } = AppointmentRepository.buildDummyAppointments()
 
     public static buildDummyOutlookAppointment(): AppointmentBuilder {
         const tomorrow = LocalDate.now().plusDays(1).atTime(LocalTime.of(13, 0))
@@ -39,16 +39,16 @@ export class AppointmentRepository {
         delete this.appointments[id]
     }
 
-    private buildDummyAppointments(): { [appointmentId: number]: AppointmentBuilder } {
+    private static buildDummyAppointments(): { [appointmentId: number]: AppointmentBuilder } {
         const result: { [appointmentId: number]: AppointmentBuilder } = {}
         for (let index = 0; index < 5; index++) {
-            const appointment = this.buildDummyAppointment(`Termin ${index}`)
+            const appointment = AppointmentRepository.buildDummyAppointment(`Termin ${index}`)
             result[appointment.id] = appointment
         }
         return result
     }
 
-    private buildDummyAppointment(title: string): AppointmentBuilder {
+    private static buildDummyAppointment(title: string): AppointmentBuilder {
         const builder = new AppointmentBuilder()
         builder.stored = true
         builder.title = title

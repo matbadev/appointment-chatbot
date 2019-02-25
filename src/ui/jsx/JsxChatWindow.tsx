@@ -132,6 +132,7 @@ export class JsxChatWindow extends React.Component<ChatWindowProps, ChatWindowSt
         this.backend.sendUserMessage(message)
     }
 
+    // noinspection JSUnusedLocalSymbols
     public componentDidUpdate(prevProps: Readonly<ChatWindowProps>, prevState: Readonly<ChatWindowState>, snapshot?: any) {
         this.messagesBottomElement!.scrollIntoView({behavior: "smooth"})
     }

@@ -48,7 +48,7 @@ export abstract class AdaptiveBaseStep extends BaseStep<AdaptiveCard> {
         return
     }
 
-    protected readString(message: UserChatMessage, id: string): string | undefined {
+    protected static readString(message: UserChatMessage, id: string): string | undefined {
         const data: any = message.data
         if (data != null) {
             const value: any = data[id]

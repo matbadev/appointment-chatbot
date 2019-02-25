@@ -120,7 +120,7 @@ a.ac-anchor:visited:active {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
-    font-family: 'FabricMDL2Icons';
+    font-family: 'FabricMDL2Icons', serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 900;

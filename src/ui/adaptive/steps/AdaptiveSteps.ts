@@ -227,8 +227,8 @@ class TitleDescriptionStep extends AdaptiveBaseStep {
     }
 
     public handleMessage(message: UserChatMessage): boolean {
-        const title: string | undefined = this.readString(message, "title")
-        const description: string | undefined = this.readString(message, "description")
+        const title: string | undefined = AdaptiveBaseStep.readString(message, "title")
+        const description: string | undefined = AdaptiveBaseStep.readString(message, "description")
         if (title != null && description != null) {
             this.context.builder.title = title
             this.context.builder.description = description
@@ -564,7 +564,7 @@ class RoomSearchStep extends AdaptiveBaseStep {
     public handleMessage(message: UserChatMessage): boolean {
         const participantsCount: number | undefined = this.readPositiveInt(message, "participantsCount")
         if (participantsCount == null) return false
-        const equipment: string | undefined = this.readString(message, "equipment")
+        const equipment: string | undefined = AdaptiveBaseStep.readString(message, "equipment")
         const equipmentValues: string[] = equipment != null ? equipment.split(",") : []
         this.context.builder.room = AppointmentRoom.getRecommended(participantsCount, equipmentValues)
         this.finish()
@@ -952,7 +952,7 @@ class FoodCateringStep extends AdaptiveBaseStep {
     }
 
     public handleMessage(message: UserChatMessage): boolean {
-        const foodValues: string | undefined = this.readString(message, "food")
+        const foodValues: string | undefined = AdaptiveBaseStep.readString(message, "food")
         this.context.builder.food = foodValues != null ? foodValues.split(",") : []
         this.finish()
         return true
@@ -1005,7 +1005,7 @@ class DrinkCateringStep extends AdaptiveBaseStep {
     }
 
     public handleMessage(message: UserChatMessage): boolean {
-        const drinkValues: string | undefined = this.readString(message, "drinks")
+        const drinkValues: string | undefined = AdaptiveBaseStep.readString(message, "drinks")
         this.context.builder.drinks = drinkValues != null ? drinkValues.split(",") : []
         this.finish()
         return true
