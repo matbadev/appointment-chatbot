@@ -13,9 +13,7 @@ The chatbot is accessible at: [https://appointment-chatbot.firebaseapp.com/](htt
 
 ## Screenshots
 
-![Screenshot 1](images/screenshot-1.png)
-
-![Screenshot 2](images/screenshot-2.png)
+![Screenshots](images/screenshots.png)
 
 ## Setup project
 
