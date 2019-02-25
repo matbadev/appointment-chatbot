@@ -84,10 +84,10 @@ export class AppointmentRoom {
     ) {
     }
 
-    public static readonly A401 = new AppointmentRoom("A401", 8, new Set(), "https://www.mycommunityspace.org.uk/wp-content/uploads/job-manager-uploads/main_image/2018/04/Astor1-1-1200x800.jpg")
-    public static readonly B201 = new AppointmentRoom("B201", 8, new Set([AppointmentEquipment.TV]), "https://honesbusinesspark.co.uk/wp-content/uploads/2017/11/meeting-room.png")
-    public static readonly E32 = new AppointmentRoom("E32", 14, new Set([AppointmentEquipment.BEAMER, AppointmentEquipment.LASERPOINTER]), "https://www.huckletree.com/uploads/files/2018/01/09/5a54d283e6469-sla-inte-meeting-room-d2.jpg")
-    public static readonly Z550 = new AppointmentRoom("Z550", 40, new Set(AppointmentEquipment.ALL), "http://www.bandaragroup.com/en/hotel/bandara-silom-hotel/images/meeting/bangkok-city-meeting-room.jpg")
+    public static readonly A401 = new AppointmentRoom("A401", 8, new Set(), `${window.location.origin}/rooms/8.jpg`)
+    public static readonly B201 = new AppointmentRoom("B201", 10, new Set([AppointmentEquipment.TV]), `${window.location.origin}/rooms/10.jpg`)
+    public static readonly E32 = new AppointmentRoom("E32", 16, new Set([AppointmentEquipment.BEAMER, AppointmentEquipment.LASERPOINTER]), `${window.location.origin}/rooms/16.jpg`)
+    public static readonly Z550 = new AppointmentRoom("Z550", 50, new Set(AppointmentEquipment.ALL), `${window.location.origin}/rooms/50.jpg`)
 
     private static readonly ALL: AppointmentRoom[] = [AppointmentRoom.A401, AppointmentRoom.B201, AppointmentRoom.E32, AppointmentRoom.Z550]
 
