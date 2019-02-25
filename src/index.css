@@ -142,6 +142,10 @@ a.ac-anchor:visited:active {
     resize: none;
 }
 
+.ac-image {
+    height: 200px;
+}
+
 .ac-input.ac-textInput.ac-multiline {
     height: 72px;
 }
