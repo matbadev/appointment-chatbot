@@ -11,6 +11,12 @@ This [React](https://reactjs.org/)-based chatbot for creating and managing appoi
 
 The chatbot is accessible at: [https://appointment-chatbot.firebaseapp.com/](https://appointment-chatbot.firebaseapp.com/)
 
+## Screenshots
+
+![Screenshot 1](images/screenshot-1.png)
+
+![Screenshot 2](images/screenshot-2.png)
+
 ## Setup project
 
 To setup the project with it's dependencies, follow these steps:
