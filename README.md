@@ -2,7 +2,7 @@
 
 This [React](https://reactjs.org/)-based chatbot for creating and managing appointments was created during a student project in the informatics master's course at [Karlsruhe University of Applied Sciences](https://www.hs-karlsruhe.de/). The authors are:
 
-- Matthias Bäuerle (@[matbadev](https://github.com/matbadev/)) 
+- Matthias Bäuerle ([@matbadev](https://github.com/matbadev/)) 
 - Nick Nowak ([@NDN92](https://github.com/NDN92))
 - Iván Victoria Fernández ([@ivan-victoria](https://github.com/ivan-victoria))
 - Valerian Flamm
